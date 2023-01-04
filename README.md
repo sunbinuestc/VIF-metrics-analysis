@@ -33,7 +33,13 @@
 
 ## 论文引用格式
 
-Sun B, Gao Y X, Zhuge W W and Wang Z X. 2023. Analysis of quality objective assessment metrics for visible and infrared image fusion. Journal of Image and Graphics,28(01):0000-0000(孙彬,高云翔,诸葛吴为,王梓萱. 2023. 可见光与红外图像融合质量评价指标分析. 中 国图象图形学报,28(01):0000-0000)[DOI:10. 11834 / jig. 210719]
+@BOOK{Sun2023-vv,  
+title  = "Analysis of quality objective assessment metrics for visible and infrared image",  
+author = "Sun, B and Gao, Y X and Zhuge, W",  
+year   =  2023  
+}
+
+
 
 
 
