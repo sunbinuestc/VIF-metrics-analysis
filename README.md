@@ -31,7 +31,7 @@
 
 打开数据处理代码 相关性 方差中的main.m，需要限定输入源数据路径以及在表中的范围。并且更改输出路径。
 
-## 论文引用格式(有待确认cl)
+## 论文引用格式(有待确认)
 
 @BOOK{Sun2023-vv,  
 title  = "Analysis of quality objective assessment metrics for visible and infrared image",  
