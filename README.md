@@ -31,13 +31,18 @@
 
 打开数据处理代码 相关性 方差中的main.m，需要限定输入源数据路径以及在表中的范围。并且更改输出路径。
 
-## 论文引用格式(有待确认)
+## 论文引用格式
+@article{ZGTB202301008,  
+ title = {可见光与红外图像融合质量评价指标分析},  
+ author = {孙彬,高云翔,诸葛吴为&王梓萱},  
+ journal = {中国图象图形学报},  
+ volume = {},
+ number = {144-155},
+ year = {2023},
+ issn = {1006-8961},
+ doi ={}
+ }
 
-@BOOK{Sun2023-vv,  
-title  = "Analysis of quality objective assessment metrics for visible and infrared image",  
-author = "Sun, B and Gao, Y X and Zhuge, W",  
-year   =  2023  
-}
 
 
 
