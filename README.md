@@ -56,7 +56,7 @@
 </table>
 
 ### Python
-在`code/Python`文件夹下，指标计算代码存放在`metric analysis`文件夹中，指标分析代码存放在`metric analysis`文件夹中，均配有相关说明。
+在`code/Python`文件夹下，指标计算代码存放在`metric calculation`文件夹中，指标分析代码存放在`metric analysis`文件夹中，均配有相关说明。
 
 ## 引用信息
 孙彬, 高云翔, 诸葛吴为, 王梓萱. 可见光与红外图像融合质量评价指标分析[J]. 中国图象图形学报, 2023,28(1):144-155. DOI： 10.11834/jig.210719.
