@@ -112,15 +112,7 @@
     <td class="xl66"></td>
     <td class="xl70" x:str><a href="https://github.com/sunbinuestc/Analysis-of-quality-objective-assessment-metrics-for-visible-and-infrared-image-fusion/blob/main/code/Matlab/VIFB/metrics/metricsQcb.m" target="_parent">Q<font class="font23"><sub>CB</sub></font></a></td>
    </tr>
-   <![if supportMisalignedColumns]>
-    <tr width="0" style='display:none;'>
-     <td width="91" style='width:68;'></td>
-     <td width="221" style='width:166;'></td>
-     <td width="38" style='width:28;'></td>
-     <td width="100" style='width:75;'></td>
-     <td width="137" style='width:103;'></td>
-   <![endif]>
-    </tr>
+
 <table>
   
 ## 结果
