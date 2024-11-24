@@ -141,3 +141,5 @@ In the `code/Python` folder, the metric calculation code is stored in the `metri
 Bin Sun, Yunxiang Gao, Wuwei Zhuge, Zixuan Wang. Analysis of quality objective assessment metrics for visible and infrared image fusion[J]. Journal of Image and Graphics, 2023,28(1):144-155. DOI： 10.11834/jig.210719.
 
 Chinese Journal of Image and Graphics Official Link: <a href="https://www.cjig.cn/zh/article/doi/10.11834/jig.210719/">Analysis of quality objective assessment metrics for visible and infrared image fusion(cjig.cn)</a>
+
+In this project, we have utilized several open-source objective metric calculation codes available online. We would like to express our gratitude to the developers who made these codes publicly available！
