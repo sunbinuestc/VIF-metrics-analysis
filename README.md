@@ -145,3 +145,4 @@ Bin Sun, Yunxiang Gao, Wuwei Zhuge, Zixuan Wang. Analysis of quality objective a
 
 中国图象图形学报官方链接<a href="https://www.cjig.cn/zh/article/doi/10.11834/jig.210719/">可见光与红外图像融合质量评价指标分析 (cjig.cn)</a>
 
+在项目中，我们引用了一些网络中开源的客观指标计算代码，在此感谢提供提供这些代码的开发者！
