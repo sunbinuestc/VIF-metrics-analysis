@@ -2,8 +2,8 @@
 % The interface is modified by the authors of VIFB to integrate it into VIFB. 
 %
 % Reference for the metric:
-% G. Qu, D. Zhang, and P. Yan, ¡°Information measure for performance of image fusion,¡± Electronics letters, vol. 38, no. 7,
-% pp. 313¨C315, 2002.
+% G. Qu, D. Zhang, and P. Yan, â€œInformation measure for performance of image fusion,â€ Electronics letters, vol. 38, no. 7,
+% pp. 313â€“315, 2002.
 
 function res = metricsMutinf(img1,img2,fused)
 
@@ -57,12 +57,12 @@ function mi = mutinf(a, b)
     M=min(Ma,Mb);
     N=min(Na,Nb);
 
-    %³õÊ¼»¯Ö±·½Í¼Êı×é
+    %åˆå§‹åŒ–ç›´æ–¹å›¾æ•°ç»„
     hab = zeros(256,256);
     ha = zeros(1,256);
     hb = zeros(1,256);
 
-    %¹éÒ»»¯
+    %å½’ä¸€åŒ–
     if max(max(a))~=min(min(a))
         a = (a-min(min(a)))/(max(max(a))-min(min(a)));
     else
@@ -78,39 +78,39 @@ function mi = mutinf(a, b)
     a = double(int16(a*255))+1;
     b = double(int16(b*255))+1;
 
-    %Í³¼ÆÖ±·½Í¼
+    %ç»Ÿè®¡ç›´æ–¹å›¾
     for i=1:M
         for j=1:N
            indexx =  a(i,j);
            indexy = b(i,j) ;
-           hab(indexx,indexy) = hab(indexx,indexy)+1;%ÁªºÏÖ±·½Í¼
-           ha(indexx) = ha(indexx)+1;%aÍ¼Ö±·½Í¼
-           hb(indexy) = hb(indexy)+1;%bÍ¼Ö±·½Í¼
+           hab(indexx,indexy) = hab(indexx,indexy)+1;%è”åˆç›´æ–¹å›¾
+           ha(indexx) = ha(indexx)+1;%aå›¾ç›´æ–¹å›¾
+           hb(indexy) = hb(indexy)+1;%bå›¾ç›´æ–¹å›¾
        end
     end
 
-    %¼ÆËãÁªºÏĞÅÏ¢ìØ
+    %è®¡ç®—è”åˆä¿¡æ¯ç†µ
     hsum = sum(sum(hab));
     index = find(hab~=0);
     p = hab/hsum;
-    Hab = sum(sum(-p(index).*log(p(index))));
+    Hab = sum(sum(-p(index).*log2(p(index))));
 
-    %¼ÆËãaÍ¼ĞÅÏ¢ìØ
+    %è®¡ç®—aå›¾ä¿¡æ¯ç†µ
     hsum = sum(sum(ha));
     index = find(ha~=0);
     p = ha/hsum;
-    Ha = sum(sum(-p(index).*log(p(index))));
+    Ha = sum(sum(-p(index).*log2(p(index))));
 
-    %¼ÆËãbÍ¼ĞÅÏ¢ìØ
+    %è®¡ç®—bå›¾ä¿¡æ¯ç†µ
     hsum = sum(sum(hb));
     index = find(hb~=0);
     p = hb/hsum;
-    Hb = sum(sum(-p(index).*log(p(index))));
+    Hb = sum(sum(-p(index).*log2(p(index))));
 
-    %¼ÆËãaºÍbµÄ»¥ĞÅÏ¢
+    %è®¡ç®—aå’Œbçš„äº’ä¿¡æ¯
     mi = Ha+Hb-Hab;
 
-    %¼ÆËãaºÍbµÄ¹éÒ»»¯»¥ĞÅÏ¢
+    %è®¡ç®—aå’Œbçš„å½’ä¸€åŒ–äº’ä¿¡æ¯
     mi1 = hab/(Ha+Hb); 
 
 end
