@@ -52,19 +52,19 @@ def _mutinf(a, b):
     hsum = np.sum(hab)
     index = hab != 0
     p = hab[index] / hsum
-    Hab = -np.sum(p * np.log(p))
+    Hab = -np.sum(p * np.log2(p))
 
     # Calculate entropy for a
     hsum = np.sum(ha)
     index = ha != 0
     p = ha[index] / hsum
-    Ha = -np.sum(p * np.log(p))
+    Ha = -np.sum(p * np.log2(p))
 
     # Calculate entropy for b
     hsum = np.sum(hb)
     index = hb != 0
     p = hb[index] / hsum
-    Hb = -np.sum(p * np.log(p))
+    Hb = -np.sum(p * np.log2(p))
 
     # Calculate mutual information
     return Ha + Hb - Hab
